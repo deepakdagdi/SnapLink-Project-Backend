@@ -21,7 +21,7 @@ public class AuthController {
     //Long URL --> short URL
 
     @PostMapping("/public/login")
-    public ResponseEntity<?> registerUser(@RequestBody LoginRequest loginRequest){
+    public ResponseEntity<?> loginUser(@RequestBody LoginRequest loginRequest){
          return ResponseEntity.ok(userService.authenticationUser(loginRequest));
 
     }
